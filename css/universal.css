@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&display=swap');
+
+:root {
+    --primary: #2F00FF;
+    --lightprimary: #522BFF;
+    --dark: #302E3A;
+    --light: #F5F3FF;
+}
+
+body {
+    background: var(--primary);
+    justify-content: center;
+    font-family: "Gabarito";
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+#sticky-menu {
+    display: none;
+}
+
+.graphic {
+    width: 350px;
+    height: auto;
+    position: absolute;
+    z-index: 0;
+}
+
+.large-text {
+    font-size: 25px;
+    font-family: "Gabarito";
+    font-weight: 500;
+    color: var(--dark);
+    background: none;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    position: relative;
+    z-index: 1;
+}
+
+.title-text {
+    font-size: 150px;
+    font-weight: 700;
+    line-height: 90px;
+    position: relative;
+    z-index: 1;
+    color: var(--dark);
+}
+
+.header-text {
+    color: var(--dark);
+    font-size: 75px;
+    font-weight: 600;
+    font-family: "Gabarito";
+}
+
+.text {
+    font-size: 18px;
+    font-family: "Gabarito";
+    color: var(--dark);
+    line-height: 25px;
+}
+
+.button {
+    width: 250px;
+    height: 60px;
+    border-radius: 10px;
+    border: none;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: "Gabarito";
+    border: 2px solid var(--primary);
+    color: var(--primary);
+    background: none;
+}
+

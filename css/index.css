@@ -1,0 +1,258 @@
+#landing {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+#landing-main {
+    position: relative;
+    background: var(--light);
+    width: 90%;
+    height: 95vh;
+    margin-top: 5vh;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 300px;
+    padding-left: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#landing-main-company {
+    display: flex;
+    align-items: end;
+}
+
+#landing-main-company-title {
+    color: var(--primary);
+    margin: 0;
+}
+#landing-main-company-llc {
+    margin: 0;
+    color: var(--primary);
+    font-weight: 700;
+    margin-bottom: -10px;
+    margin-left: 10px;
+}
+#landing-main-subtitle {
+    margin-left: 7px;
+}
+
+#landing-main-graphic-1 {
+    top: 15vh;
+    left: 20px;
+}
+#landing-main-graphic-2 {
+    bottom: 50px;
+    right: 0;
+}
+
+#landing-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 300px;
+    position: relative;
+    z-index: 1;
+    height: 100vh;
+    overflow-x: hidden;
+}
+#landing-menu-about, #landing-menu-portfolio, #landing-menu-contact {
+    color: var(--light);
+    transition: 0.2s;
+    width: 70%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+}
+#landing-menu-portfolio, #landing-menu-contact {
+    margin-top: 10px;
+}
+
+#landing-menu-about:hover, #landing-menu-portfolio:hover, #landing-menu-contact:hover {
+    cursor: pointer;
+    background: var(--light);
+    color: var(--primary)
+}
+
+#landing-menu-graphic {
+    bottom: 50px;
+    right: -110px;
+}
+
+#about-main-headshot {
+    width: 500px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+#about {
+    position: relative;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    margin-top: 100px;
+}
+
+#about-title {
+    transform: rotate(-90deg);
+    color: white;
+    text-transform: uppercase;
+    margin: 0;
+    margin-top: 200px;
+}
+#about-main-header {
+    margin-top: 30px;
+}
+
+#about-main {
+    position: relative;
+    width: 100%;
+    background: var(--light);
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 100px;
+    height: 400px;
+    margin: 0;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    margin-left: -150px;
+}
+#about-main-text {
+    margin-top: -60px;
+    width: 600px;
+}
+#about-main-contact {
+    margin-top: 25px;
+    margin-bottom: 10px;
+    background: var(--primary);
+    color: var(--light);
+}
+
+.portfolio-work-image {
+    height: 75px;
+    width: 100%;
+    object-fit: cover;  
+    border-radius: 10px;
+    position: absolute;
+    margin-top: 35px;
+    filter: brightness(70%);
+}
+#portfolio-work-2-image {
+    object-position: 0% 75%;
+}
+#portfolio-work-3-image {
+    object-position: 0% 30%;
+}
+.portfolio-cover {
+    position: absolute;
+    background: var(--primary);
+    height: 75px;
+    margin-top: 35px;
+    width: 100%;
+    transition: 0.5s;
+    left: 0;
+}
+
+#portfolio {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+#portfolio-header {
+    color: var(--light);
+    text-transform: uppercase;
+    font-weight: 600;
+}
+#portfolio-work {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    margin-top: -100px;
+    width: 100%;
+    
+}
+.portfolio-work-section {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    height: 175px;
+    position: relative;
+    width: 100%;
+    margin-bottom: -30px;
+}
+#portfolio-work-1-title, #portfolio-work-2-title, #portfolio-work-3-title, #portfolio-work-4-title {
+    color: var(--lightprimary);
+    text-transform: uppercase;
+    transition: 0.2s;
+}
+#portfolio-work-4-title {
+    font-weight: 800;
+    margin-top: 0px;
+}
+#portfolio-work-1-title:hover ~ #portfolio-work-1-cover {
+    width: 0%;
+}
+#portfolio-work-1-title:hover {
+    color: white;
+    cursor: pointer;
+}
+#portfolio-work-2-title:hover ~ #portfolio-work-2-cover {
+    width: 0%;
+}
+#portfolio-work-2-title:hover {
+    color: white;
+    cursor: pointer;
+}
+#portfolio-work-3-title:hover ~ #portfolio-work-3-cover {
+    width: 0%;
+}
+#portfolio-work-3-title:hover {
+    color: white;
+    cursor: pointer;
+}
+#portfolio-work-4-title:hover {
+    color: white;
+    cursor: pointer;
+}
+
+
+#contact {
+    margin-top: 100px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+#contact-header {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    color: white;
+}
+#contact-email {
+    width: 110%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--light);
+    color: var(--primary);
+    border-top-left-radius: 300px;
+    text-transform: uppercase;
+}
+#contact-graphic {
+    position: absolute;
+    left: 0;
+    top: -175px;
+}
+
