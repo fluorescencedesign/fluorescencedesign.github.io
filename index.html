@@ -5,14 +5,14 @@
         <link rel="icon" href="./images/tab-logo.png">
         <link rel="stylesheet" href="./css/universal.css">
         <link rel="stylesheet" href="./css/index.css">
+        <script src="./js/universal.js"></script>
     </head>
-    <script src="universal.js"></script>
     <body>
         <div id="sticky-menu">
-            <button class="large-text" id="sticky-menu-top">Top</button>
-            <button class="large-text" id="sticky-menu-about">About</button>
-            <button class="large-text" id="sticky-menu-portfolio">Portfolio</button>
-            <button class="large-text" id="sticky-menu-contact">Contact</button>
+            <button class="large-text" id="sticky-menu-top" onclick="topScroll()">Top</button>
+            <button class="large-text" id="sticky-menu-about" onclick="aboutScroll()">About</button>
+            <button class="large-text" id="sticky-menu-portfolio" onclick="openPortfolio()">Portfolio</button>
+            <button class="large-text" id="sticky-menu-contact" onclick="contactScroll()">Contact</button>
         </div>
 
         <div id="landing">
@@ -26,9 +26,9 @@
                 <img class="graphic" id="landing-main-graphic-2" src="./images/graphic-light.png">
             </div>
             <div id="landing-menu">
-                <button class="large-text" id="landing-menu-about">About</button>
-                <button class="large-text" id="landing-menu-portfolio">Portfolio</button>
-                <button class="large-text" id="landing-menu-contact">Contact</button>  
+                <button class="large-text" id="landing-menu-about" onclick="aboutScroll()">About</button>
+                <button class="large-text" id="landing-menu-portfolio" onclick="openPortfolio()">Portfolio</button>
+                <button class="large-text" id="landing-menu-contact" onclick="contactScroll()">Contact</button>  
                 <img class="graphic" id="landing-menu-graphic" src="./images/graphic-dark.png">
             </div>
         </div>
@@ -38,8 +38,8 @@
             <div id="about-main">
                 <p class="header-text" id="about-main-header">Hello, I'm <span style="color: var(--primary)">Richard</span>.</p>
                 <p class="text" id="about-main-text">With over 6 years of web design and development experience and a background in UI/UX design, I’m committed to making bold, detailed, and accessible websites tailored carefully to your audience’s needs.</p>
-                <button class="button" id="about-main-contact">Contact Me</button><br>
-                <button class="button" id="about-main-portfolio">My UX Portfolio</button>
+                <button class="button" id="about-main-contact" onclick="contactScroll()">Contact Me</button><br>
+                <button class="button" id="about-main-portfolio" onclick="openPortfolio()">My UX Portfolio</button>
                 <img id="about-main-headshot" src="./images/headshot.png">       
             </div>
         </div>
@@ -47,23 +47,23 @@
         <div id="portfolio">
             <p class="header-text" id="portfolio-header">Portfolio</p>
             <div id="portfolio-work">
-                <div class="portfolio-work-section" id="portfolio-work-1">
+                <div class="portfolio-work-section" id="portfolio-work-1" onclick="openPortfolio1()">
                     <p class="title-text" id="portfolio-work-1-title">Pulsar, TSA</p>
                     <img class="portfolio-work-image" id="portfolio-work-1-image" src="./images/pulsartsa.jpg">
                     <div class="portfolio-cover" id="portfolio-work-1-cover"></div>
                 </div>
-                <div class="portfolio-work-section" id="portfolio-work-2">
+                <div class="portfolio-work-section" id="portfolio-work-2" onclick="openPortfolio2()">
                     <p class="title-text" id="portfolio-work-2-title">HealthyMind</p>
                     <img class="portfolio-work-image" id="portfolio-work-2-image" src="./images/healthymind.jpg">
                     <div class="portfolio-cover" id="portfolio-work-2-cover"></div>
                 </div>
-                <div class="portfolio-work-section" id="portfolio-work-3">
+                <div class="portfolio-work-section" id="portfolio-work-3" onclick="openPortfolio3()">
                     <p class="title-text" id="portfolio-work-3-title">The Pow Center</p>
                     <img class="portfolio-work-image" id="portfolio-work-3-image" src="./images/powcenter.jpg">
                     <div class="portfolio-cover" id="portfolio-work-3-cover"></div>
                 </div>
                 <div class="portfolio-work-section" id="portfolio-work-4">
-                    <p class="header-text" id="portfolio-work-4-title">My UX Work</p>
+                    <p class="header-text" id="portfolio-work-4-title" onclick="openPortfolio()">My UX Work</p>
                 </div>
             </div>
         </div>

@@ -17,7 +17,33 @@ body {
 }
 
 #sticky-menu {
-    display: none;
+    position: fixed;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 20px;
+    right: 20px;
+    z-index: 100;
+    width: 600px;
+    height: 75px;
+    border-radius: 100px;
+}
+#sticky-menu-top, #sticky-menu-about, #sticky-menu-portfolio, #sticky-menu-contact {
+    color: var(--primary);
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition: 0.2s;
+}
+#sticky-menu-top:hover, #sticky-menu-about:hover, #sticky-menu-portfolio:hover, #sticky-menu-contact:hover {
+    background: var(--primary);
+    color: white;
+    cursor: pointer;
 }
 
 .graphic {
@@ -75,4 +101,38 @@ body {
     color: var(--primary);
     background: none;
 }
+@media only screen and (max-width: 1024px) {
+    body {
+        overflow-x: hidden;
+    }
+    .title-text {
+        font-size: 175px;
+        line-height: 120px;
+    }
+    .large-text {
+        font-size: 75px;
+    }
+    .text {
+        font-size: 50px;
+        line-height: 60px;
+    }
+    .button {
+        width: 600px;
+        height: 150px;
+        font-size: 50px;
+    }
 
+    #sticky-menu {
+        height: 150px;
+        width: 100%;
+        margin: 0;
+        right: 0;
+        bottom: 0;
+        border-radius: 10px;
+    }
+    #sticky-menu-top, #sticky-menu-about, #sticky-menu-portfolio, #sticky-menu-contact {
+        font-size: 60px;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+}
