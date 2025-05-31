@@ -7,6 +7,9 @@ function contactScroll() {
 function aboutScroll() {
     scrollTo({top: document.getElementById("about").offsetTop - offset, behavior: "smooth"});
 }
+function portfolioScroll() {
+    scrollTo({top: document.getElementById("portfolio").offsetTop - offset, behavior: "smooth"});
+}
 function topScroll() {
     scrollTo({top: 0, behavior: "smooth"});
 }
